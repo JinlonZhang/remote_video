@@ -7,6 +7,8 @@ import {
   Link
 } from 'react-router-dom';
 
+import Media from './component/media';
+
 const Home = () => (
   <div>Home</div>
 );
@@ -19,6 +21,7 @@ const Root = () => (
     <div style={{ height: '100%' }}>
       <Route exact path="/" component={Home}/>
       <Route path="/login" component={Login}/>
+      <Route path="/media" component={Media}/>
     </div>
   </Router>
 )
